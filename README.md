@@ -4,6 +4,68 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <style>
+          
+          html{
+    scroll-behavior: smooth;
+}
+
+.cover{
+    background:no-repeat, linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://images.unsplash.com/photo-1506784693919-ef06d93c28d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.cover-content{
+    min-height: 100vh;
+}
+.cover-content img{
+
+    max-width: 200px;
+    border:2px solid white;
+}
+
+.about{
+    background-color: #ececec;
+}
+
+@media screen and (max-width: 760px) {
+    .cover-content h1{
+        font-size: 36px;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+    .cover-content h6{
+        font-size: 15px;
+    }
+}
+/* 
+img:hover
+{
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px black;
+	scale: 3;
+	transition-duration: 2s;
+
+}    */
+
+img:hover {
+    transform: scale(1.2); /* Increase the size of the image on hover */
+    /* filter: grayscale(100%);  */
+    /* filter: blur(5px); */
+
+    /* filter: brightness(150%); */
+
+    /* opacity: 0.7; */
+    /* transform: rotate(20deg); */
+
+  }
+  
+        </style>
+
+
+
+
         <title>Document</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -11,7 +73,7 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
     </head>
     <body data-bs-spy="scroll" data-bs-target="#nav-scroll" data-offset="56">
         <header class="Header" id="home">
@@ -175,6 +237,9 @@
                 </div>
             </div>
         </footer>
+
+          
+
         <!-- Scripts -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
